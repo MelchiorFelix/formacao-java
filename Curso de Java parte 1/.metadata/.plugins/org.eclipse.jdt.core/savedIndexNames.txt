@@ -1,0 +1,16 @@
+INDEX VERSION 1.131+/home/melchior/Documents/Cursos/Formação Java/Curso de Java parte 1/.metadata/.plugins/org.eclipse.jdt.core
+4002586043.index
+3178004918.index
+1198183343.index
+3432563038.index
+1479678268.index
+591916492.index
+922781003.index
+100282935.index
+3807764000.index
+15421085.index
+235964860.index
+2167371574.index
+3007012738.index
+1142398524.index
+1943451760.index
