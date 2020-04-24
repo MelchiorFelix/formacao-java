@@ -6,7 +6,7 @@ public class TestaConversao {
 		int valor = (int) salario;
 		System.out.println(valor);
 		
-		long numeroGrande = 32432423523L;
+		//long numeroGrande = 32432423523L;
 		
 		double valor1 = 0.2;
 		double valor2 = 0.1;
