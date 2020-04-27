@@ -5,7 +5,27 @@ public class Conta {
 	private int agencia;
 	private int numero;
 	private Cliente titular;
-
+	private static int total;
+	
+	public Conta(int agencia, int numero) {
+		Conta.total++;
+        if(agencia >= 0) {
+        	this.agencia = agencia;
+        } else {
+        	System.out.println("Opa,Agencia não pode ser negativa");
+        	return;
+        }
+        if(agencia >= 0) {
+        	this.numero = numero;
+        } else {
+        	System.out.println("Opa,numero não pode ser negativa");
+        	return;
+        }
+        
+        this.saldo = 100;
+        System.out.println("Estou criando uma conta" + this.numero);
+	}
+	
 	public double getSaldo() {
 		return this.saldo;
 	}
@@ -15,8 +35,9 @@ public class Conta {
 	}
 
 	public void setAgencia(int agencia) {
-		if (this.agencia < 0) {
-			System.out.println("Opa conta não pode ser negativa");
+		if (this.agencia <= 0) {
+			System.out.println("Opa,Agencia não pode ser negativa");
+			return;
 		}
 		this.agencia = agencia;
 	}
@@ -34,8 +55,9 @@ public class Conta {
 	}
 
 	public void setNumero(int numero) {
-		if (this.numero < 0) {
-			System.out.println("Opa numero não pode ser negativa");
+		if (this.numero <= 0) {
+			System.out.println("Opa,numero não pode ser negativa");
+			return;
 		}
 		this.numero = numero;
 	}
@@ -59,6 +81,10 @@ public class Conta {
 			return true;
 		}
 		return false;
+	}
+	
+	public static int getTotal() {
+		return total;
 	}
 
 }
