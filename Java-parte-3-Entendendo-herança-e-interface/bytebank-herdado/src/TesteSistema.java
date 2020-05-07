@@ -10,7 +10,7 @@ public class TesteSistema {
 		a.setSenha(5555);
 		
 		Cliente cliente = new Cliente();
-		cliente.setSenha(2222);
+		cliente.setSenha(555);
 		
 	
 		SistemaInterno si = new SistemaInterno();

@@ -1,5 +1,5 @@
 
-public abstract interface Autenticavel {
+public abstract interface Autenticador {
 
 	public abstract void setSenha(int senha);
 
