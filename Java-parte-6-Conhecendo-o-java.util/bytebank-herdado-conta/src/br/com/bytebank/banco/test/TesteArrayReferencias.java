@@ -18,6 +18,8 @@ public class TesteArrayReferencias {
 		
 		System.out.println(ref.getNumero());
 		
+		System.out.println(cc1);
+		
 
 	}
 
