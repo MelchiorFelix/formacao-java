@@ -96,5 +96,15 @@ public abstract class Conta extends Object {
 	public String toString() {
 		return "Numero: " + this.numero + ", Agencia: " + this.agencia;
 	}
+    
+    @Override
+    public boolean equals(Object obj) {
+    	Conta c = (Conta) obj;
+    	if(this.numero == c.getNumero() && this.agencia == c.getAgencia()) {
+    		return true;
+    	}
+    	return false;
+    }
+    
 
 }
