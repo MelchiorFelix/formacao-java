@@ -2,7 +2,7 @@ package br.com.alura.java.io.teste;
 
 import java.io.*;
 
-public class TesteEscrita3 {
+public class TesteEscritaPrintStreamPrintWrite{
 
 	public static void main(String[] args) throws IOException {
 
