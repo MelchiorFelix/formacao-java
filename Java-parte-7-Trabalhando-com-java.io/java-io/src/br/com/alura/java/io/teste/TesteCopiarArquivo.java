@@ -1,14 +1,13 @@
 package br.com.alura.java.io.teste;
 
 import java.io.*;
-import java.util.zip.InflaterInputStream;
 
 public class TesteCopiarArquivo {
 
 	public static void main(String[] args) throws IOException {
 
 
-		InputStream fis = new FileInputStream("lorem.txt");
+		InputStream fis = System.in; //new FileInputStream("lorem.txt");
 		Reader isr = new InputStreamReader(fis);
 		BufferedReader br = new BufferedReader(isr);
 		
