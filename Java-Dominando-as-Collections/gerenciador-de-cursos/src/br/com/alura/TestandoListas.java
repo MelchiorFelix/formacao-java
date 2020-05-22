@@ -18,9 +18,37 @@ public class TestandoListas {
 		
 		cursos.remove(1);
 
+		System.out.println(cursos);
+
+		cursos.remove(0);
+
+		System.out.println(cursos);
+
+		for (String curso : cursos) {
+			System.out.println("Curso: " + curso);
+		}
+
+		String primeiraAula = cursos.get(0);
+		System.out.println("A primeira curso é " + primeiraAula);
+
+		for (int i = 0; i < cursos.size(); i++) {
+			System.out.println("Curso: " + cursos.get(i));
+		}
+
+		System.out.println(cursos.size());
+
+		cursos.forEach(curso -> {
+			System.out.println("Percorrendo: ");
+			System.out.println("Curso " + curso);
+		});
+
+		cursos.add("Aumentando nosso conhecimento");
+		System.out.println(cursos);
+
 		Collections.sort(cursos);
 
-        System.out.println(cursos);
+		System.out.println("Depois de ordenado:");
+		System.out.println(cursos);
 
 	}
 
