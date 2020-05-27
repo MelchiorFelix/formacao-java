@@ -10,8 +10,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @SuppressWarnings("serial")
-@WebServlet(urlPatterns = "/oi")
+@WebServlet(urlPatterns = "/oi", loadOnStartup=1)
 public class OiMundoServlet extends HttpServlet{
+	
+	public OiMundoServlet() {
+		System.out.println("Criando Servlet");
+	}
 	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
