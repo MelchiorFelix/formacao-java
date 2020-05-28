@@ -1,4 +1,4 @@
-package br.com.caelum.gerenciador.modelo;
+package br.com.alura.gerenciador.modelo;
 
 import java.util.Date;
 
