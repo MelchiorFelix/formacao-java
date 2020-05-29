@@ -17,13 +17,11 @@ public class Login implements Acao {
 			throws ServletException, IOException {
 		String login = request.getParameter("login");
 		String senha = request.getParameter("senha");
-		System.out.println("Logando " + login);
 		
 		Banco banco = new Banco();
 		Usuario usuario = banco.existeUsuario(login,senha);
 		
 		if( usuario != null) {
-			System.out.println("Usuario existe");
 			HttpSession session = request.getSession();
 			session.setAttribute("usuario", usuario);
 			return "redirect:entrada?acao=ListaEmpresas";
