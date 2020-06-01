@@ -1,0 +1,14 @@
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/controller/EstatisticasController.java
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/model/Produto.java
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/controller/ProdutoController.java
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/dao/ProdutoDao.java
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/model/Categoria.java
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/model/Loja.java
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/dao/LojaDao.java
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/JpaConfigurator.java
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/dao/CategoriaDao.java
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/controller/HomeController.java
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/controller/LojaController.java
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/Inicializador.java
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/Configurador.java
+/media/melchior/Backup/Desenvolvimento/Cursos/formacao-java/Java-e-JPA-Otimizacoes-com-JPA2-e-Hibernate/projeto-jpa-2/src/main/java/br/com/caelum/CriadorDeProdutos.java
