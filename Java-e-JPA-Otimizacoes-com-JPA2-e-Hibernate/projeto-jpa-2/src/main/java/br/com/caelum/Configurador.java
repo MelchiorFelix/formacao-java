@@ -30,7 +30,7 @@ import br.com.caelum.model.Produto;
 @ComponentScan("br.com.caelum")
 @EnableTransactionManagement
 public class Configurador extends WebMvcConfigurerAdapter {
-	 
+	
 	@Bean
 	@Scope("request")
 	public List<Produto> produtos(ProdutoDao produtoDao) {
