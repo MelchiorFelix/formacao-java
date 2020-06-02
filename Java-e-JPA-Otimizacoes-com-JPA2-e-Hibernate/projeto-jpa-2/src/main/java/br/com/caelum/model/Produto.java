@@ -1,4 +1,3 @@
-
 package br.com.caelum.model;
 
 import java.util.ArrayList;
@@ -13,7 +12,8 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
+
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 public class Produto {
@@ -21,12 +21,12 @@ public class Produto {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	@NotBlank
+	@NotEmpty
 	private String nome;
-	@NotBlank
+	@NotEmpty
 	private String linkDaFoto;
 
-	@NotBlank
+	@NotEmpty
 	@Column(columnDefinition = "TEXT")
 	private String descricao;
 
@@ -46,6 +46,12 @@ public class Produto {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
+	}
+
+	public void adicionarCategorias(Categoria... categorias) {
+		for (Categoria categoria : categorias) {
+			this.categorias.add(categoria);
+		}
 	}
 
 	public String getLinkDaFoto() {

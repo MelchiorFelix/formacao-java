@@ -10,9 +10,11 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.format.FormatterRegistry;
+import org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
@@ -23,13 +25,12 @@ import br.com.caelum.model.Categoria;
 import br.com.caelum.model.Loja;
 import br.com.caelum.model.Produto;
 
-@SuppressWarnings("deprecation")
 @Configuration
 @EnableWebMvc
 @ComponentScan("br.com.caelum")
 @EnableTransactionManagement
 public class Configurador extends WebMvcConfigurerAdapter {
-	
+	 
 	@Bean
 	@Scope("request")
 	public List<Produto> produtos(ProdutoDao produtoDao) {
@@ -89,6 +90,16 @@ public class Configurador extends WebMvcConfigurerAdapter {
 			}
 			
 		});
+	}
+	
+	@Bean
+	public OpenEntityManagerInViewInterceptor getOpenEntityManagerInViewInterceptor() {
+		return new OpenEntityManagerInViewInterceptor();
+	}
+	
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		registry.addWebRequestInterceptor(getOpenEntityManagerInViewInterceptor());
 	}
 	
 }

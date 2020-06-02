@@ -41,9 +41,8 @@ public class JpaConfigurator {
 
 		Properties props = new Properties();
 
-		props.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
+		props.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5InnoDBDialect");
 		props.setProperty("hibernate.show_sql", "true");
-		props.setProperty("hibernate.format_sql", "true");
 		props.setProperty("hibernate.hbm2ddl.auto", "create-drop");
 
 		entityManagerFactory.setJpaProperties(props);
@@ -59,4 +58,3 @@ public class JpaConfigurator {
 	}
 
 }
-

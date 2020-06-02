@@ -12,19 +12,19 @@ public class Categoria {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String nome;
-
+	
 	public Categoria(String nome) {
 		this.nome = nome;
 	}
-
-	public Categoria() {
-
+	
+	public Categoria() { 
+		
 	}
 
 	public Integer getId() {
 		return id;
 	}
-
+	
 	public void setId(Integer id) {
 		this.id = id;
 	}
