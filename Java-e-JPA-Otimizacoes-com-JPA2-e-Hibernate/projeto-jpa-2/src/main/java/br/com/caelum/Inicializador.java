@@ -4,6 +4,7 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+//import org.springframework.web.util.Log4jConfigListener;
 
 public class Inicializador extends
 		AbstractAnnotationConfigDispatcherServletInitializer {
