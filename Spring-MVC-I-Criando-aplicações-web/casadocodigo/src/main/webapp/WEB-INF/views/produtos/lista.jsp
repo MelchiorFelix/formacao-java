@@ -11,6 +11,7 @@
 <body>
    	
    	<div>${sucesso}</div>
+   	<div>${falha}</div>
    	
    	<h1>Lista de Produtos</h1>
    	
