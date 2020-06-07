@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-   <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-   <%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,6 +44,19 @@
 	                    </a>
 	                </li>
 	            </ul>
+	             <ul class="nav navbar-nav navbar-right">
+			        <li class="nav-item">
+			            <a href="#">
+			                <security:authentication 
+			                    property="principal" 
+			                        var="usuario" />
+			                Usuário: ${usuario.username }
+			            </a>
+			        </li>
+			        <li class="nav-item">
+					     <a href="<c:url value="/logout" />">Sair</a>
+					</li>
+			    </ul>
 	        </div><!-- /.navbar-collapse -->
 	    </div>
 	</nav>
